@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Naomi Teklemichael -- Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+               <span class="logo">Naomi Teklemichael</span>
+                <a href = "#about">About</a>
+                <a href = "#education">Education</a>
+                <a href = "#skills">Skills</a>
+                <a href = "#projects">Projects</a>
+                <a href = "#contact">Contact</a> 
+            </nav>
+        </header>
+        
+
+        <main class="dashboard">
+            <section id = "about">
+                <h2>
+                    About Me
+                </h2>
+                <p>Hi! I'm Naomi Teklemichael, a computer science student at UTSA with a concentration in data science. 
+                    I am interested in AI/ML and software. My skills range from object-oriented programming in Java 
+                    to building data-driven applications in Python, with a growing interest in 
+                    data science and machine learning.
+                </p>
+            </section>
+
+            <section id = "education">
+                <h2>
+                    Education
+                </h2>
+                <div class="education-entry">
+                <h3>University of Texas at San Antonio</h3>
+                <p class="date">Expected Graduation: Dec 2027</p>
+                <p class="degree">B.S. in Computer Science</p>
+                <p class="gpa">GPA: 3.75</p>
+                <p class="course">Relevant Courses: Data Structures and Algorithms, Applied Linear Algebra, Discrete Math, CS CURE, Computer
+                    Programming in C</p>
+                </div>
+            </section>
+
+            <div class="skills-columns">
+            <div>
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+            <div>
+                <h3>Tools/Technologies</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">REST APIs</span>
+                </div>
+            </div>
+            </div>
+
+
+
+            <section id = "projects">
+                <h2>
+                    Projects
+                </h2>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Live Sports Tracker</h3>
+                        <p class="tech">Tech Used: Python, requests, JSON, REST APIs, Git/GitHub</p>
+                        <ul class="description">
+                            <li>Built a Python application that polls a live REST API on a scheduled interval to track real-time score updates for
+                                sports matches</li>
+                            <li>Implemented change-detection logic using dictionary-based state comparison for efficient (O(1)) lookups between
+                                API polls</li>
+                            <li>Secured API credentials using environment variables 
+                                instead of hardcoding secrets into source code</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Personal Website</h3>
+                        <p class="tech">Tech Used: HTML, CSS, Javascript, Git/GitHub</p>
+                        <ul class="description">
+                            <li>Built a responsive, mobile-friendly personal site featuring an about section, skills, education timeline, and project
+                                showcase with live demo links</li>
+                            <li>Implemented dark mode toggle using vanilla JS</li>
+                            <li>Deployed and version-controlled using Git and GitHub Pages, with continuous updates as new projects are
+                                completed</li>
+                        
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Habit Tracker Web App (in progress)</h3>
+                        <p class="tech">Tech Used: JavaScript, React, Node.js, Express, SQLite</p>
+                        <ul class="description">
+                            <li>Developed a full-stack habit tracking application allowing users to create habits, log daily completions, and view
+                                streak statistics</li>
+                            <li>Built a REST API with Express to handle CRUD 
+                                operations for habits and daily logs, backed by a SQLite database</li>
+                            <li>Implemented a calendar-heatmap visualization to display habit consistency over time</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Contradex — Contradiction Detection for Personal Records (in progress)</h3>
+                        <p class="tech">Tech Used: Python, PyTorch, Hugging Face </p>
+                        <ul class="description">
+                            <li>Building a privacy-first pipeline that ingests a user’s medical, insurance, lease, and loan PDFs and flags contradictions across 
+                                sources and time (e.g., an EOB billing a stay as outpatient vs. a discharge summary saying inpatient)</li>
+                            <li>Designing LLM-based structured extraction that normalizes 
+                                free text into (entity, attribute, value, date, source) claim tuples forcross-document comparison</li>
+                            <li>Architecting two-stage retrieval + verification: embedding clustering surfaces candidate claim pairs on a shared entity, then a
+                                DeBERTa-v3 NLI cross-encoder with LLM-as-judge fallback 
+                                separates contradictions from legitimate change over time</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id = "contact">
+                <h2>
+                    Contact
+                </h2>
+                <p>Email me: <a href="mailto:naomiteklemichael444@gmail.com">naomiteklemichael444@gmail.com</a></p>
+            </section>
+
+        </main>
+    </body>
+</html>

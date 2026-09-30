@@ -1,0 +1,205 @@
+:root{
+    --pink: #FED9FF;
+    --green: #D9FFEB;
+    --blue: #D9EBFF;
+}
+
+@font-face {
+    font-family: 'The Sims Sans Bold';
+    src: url('fonts/thesimssansbold.woff') format('woff');
+}
+
+
+body {
+    background-image: url('images/sims_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-family: 'The Sims Sans Bold', sans-serif;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav .logo {
+    font-weight: 700;
+    margin-right: auto;
+    font-size: 1.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #6a5acd;
+}
+
+main.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+.card {
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-wide {
+    grid-column: span 2;
+}
+
+/* remove old full-width section rule, since .card handles this now */
+
+section p, section li {
+    line-height: 1.5;
+}
+
+#skills .skills-columns {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: rgba(217, 255, 235, 0.9);
+    border: 2px solid #3cb371;
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.project-card ul {
+    padding-left: 20px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+h2::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(135deg, #00e676, #00b34d);
+    transform: rotate(45deg);
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+
+/* Alternate section backgrounds full-bleed vs. centered card, for variety */
+#hero, #education, #contact {
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#about, #skills, #projects {
+    max-width: 900px;
+    margin: 25px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Two-column layout for hero: text left, empty space/graphic right */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 80px;
+}
+
+#hero > div {
+    max-width: 500px;
+}
+
+/* Two-column layout for Education: school info left, courses right */
+.education-entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.education-entry .course {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+}
+
+
+
+#hero{
+    background-color: rgba(255, 236, 253, 0.6);
+}
+
+#about{
+    background-color: rgba(255, 236, 253, 0.6);
+}
+
+#education{
+    background-color: rgba(255, 236, 253, 0.6);
+}
+
+#skills{
+    background-color: rgba(255, 236, 253, 0.6);
+}
+
+#projects{
+    background-color: rgba(255, 236, 253, 0.6);
+}
+
+#contact{
+    background-color: rgba(255, 236, 253, 0.6);
+}
+
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
