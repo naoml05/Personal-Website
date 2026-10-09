@@ -1,43 +1,53 @@
-# 💎 Naomi Teklemichael — Personal Website
+# Naomi Teklemichael | Personal Website
 
-*Loading Naomi's portfolio... Please wait while your Sim explores their skills, education, and projects.*
+A cozy, life-sim-inspired portfolio site showcasing my projects, skills, and journey as a computer science student at UTSA.
 
-🔗 **Live site:** Loading...
+**Live site:** https://naoml05.github.io/Personal-Website/
 
-## 📋 Sim Info
+## About me
 
-A responsive personal portfolio site showcasing my background, skills, education, and projects — built with a little Sims-inspired flair (pastel palette, playful UI touches, and a title font ripped straight from Del Sol Valley).
+I'm a B.S. Computer Science student at UTSA (expected December 2027) focused on applied machine learning and NLP. I'm looking for Summer 2027 ML and software engineering internships.
 
-## 🏠 Neighborhoods (Sections)
+## Features
 
-- **About Me** — get to know this Sim: interests in AI/ML and software
-- **Skills** — the "Skill Journal" — languages and tools, leveled up through coursework and projects
-- **Education** — Sim's current life stage: pursuing a B.S. in Computer Science at UTSA
-- **Projects** — build mode showcase: a live sports tracker, a habit tracker web app (in progress), and this very site
-- **Contact** — drop a text on the Sim's phone (aka, email me)
+- Animated background with a shifting sky, drifting clouds, floating hearts and sparkles, and a sliding checkered floor
+- Profile card with a bobbing avatar and thought bubble
+- Project cards, skill meters that fill in as you scroll, and a milestone timeline
+- Responsive layout with a mobile menu
+- Respects the "reduce motion" accessibility setting
 
-## 🛠️ Built With
+## Built with
 
-- HTML5
-- CSS3 (custom properties, Flexbox, Grid)
-- JavaScript
-- **The Sims Sans** (fan-made recreation) for headings
-- **Nunito** via Google Fonts for body text
-- 💚 Plumbob-inspired accents throughout
+- HTML
+- CSS (custom properties, keyframe animations, grid and flexbox)
+- Vanilla JavaScript (no frameworks or libraries)
 
-## 🎨 Design Notes
+## Project structure
 
-Soft blue/pink/green palette layered over a custom neighborhood-style background image, with card-based "build mode" layout for each life section.
-
-## ▶️ Running Locally
-
-1. Clone the lot:
-```bash
-   git clone https://github.com/naoml05/Personal-Website.git
 ```
-2. Open `index.html` in a browser, or use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension in VS Code to keep your Sim's world auto-updating as you build.
+Personal-Website/
+├── index.html   # page content and structure
+├── styles.css   # colors, layout, and animations
+├── script.js    # floating hearts, mobile menu, scroll effects
+└── README.md
+```
 
-## 📱 Contact This Sim
+## Run it locally
+
+1. Clone the repo:
+   ```
+   git clone https://github.com/naoml05/Personal-Website.git
+   ```
+2. Open the folder and double-click `index.html`, or open the folder in VS Code and use the Live Server extension.
+
+No build step or installs needed.
+
+## Customizing
+
+- **Text and links:** edit `index.html` (look for the `EDIT` comments)
+- **Skill levels:** change the `--lvl` value (out of 10) on each skill bar
+- **Colors:** change the variables at the top of `styles.css`
+
+## Contact
 
 - GitHub: [@naoml05](https://github.com/naoml05)
-- LinkedIn: [Naomi Teklemichael](https://www.linkedin.com/in/naomiteklemichael/)
