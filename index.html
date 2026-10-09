@@ -1,148 +1,232 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Naomi Teklemichael -- Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav>
-               <span class="logo">Naomi Teklemichael</span>
-                <a href = "#about">About</a>
-                <a href = "#education">Education</a>
-                <a href = "#skills">Skills</a>
-                <a href = "#projects">Projects</a>
-                <a href = "#contact">Contact</a> 
-            </nav>
-        </header>
-        
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naomi Teklemichael | Portfolio</title>
+  <meta name="description" content="Naomi Teklemichael, UTSA computer science student focused on applied machine learning and NLP. Projects, skills, and contact info.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
 
-        <main class="dashboard">
-            <section id = "about">
-                <h2>
-                    About Me
-                </h2>
-                <p>Hi! I'm Naomi Teklemichael, a computer science student at UTSA with a concentration in data science. 
-                    I am interested in AI/ML and software. My skills range from object-oriented programming in Java 
-                    to building data-driven applications in Python, with a growing interest in 
-                    data science and machine learning.
-                </p>
-            </section>
+  <!-- Animated background: sky gradient, drifting clouds, floating hearts/sparkles, sliding checkered floor -->
+  <div class="sky" aria-hidden="true">
+    <span class="cloud c1"></span>
+    <span class="cloud c2"></span>
+    <span class="cloud c3"></span>
+    <span class="cloud c4"></span>
+    <span class="cloud c5"></span>
+    <div class="floaters" id="floaters"></div>
+    <div class="floor"></div>
+  </div>
 
-            <section id = "education">
-                <h2>
-                    Education
-                </h2>
-                <div class="education-entry">
-                <h3>University of Texas at San Antonio</h3>
-                <p class="date">Expected Graduation: Dec 2027</p>
-                <p class="degree">B.S. in Computer Science</p>
-                <p class="gpa">GPA: 3.75</p>
-                <p class="course">Relevant Courses: Data Structures and Algorithms, Applied Linear Algebra, Discrete Math, CS CURE, Computer
-                    Programming in C</p>
-                </div>
-            </section>
+  <header class="site-header">
+    <nav class="nav panel" aria-label="Main">
+      <a class="logo" href="#top">Naomi<span>♥</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <div class="skills-columns">
-            <div>
-                <h3>Languages</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">C</span>
-                    <span class="skill-tag">CSS</span>
-                    <span class="skill-tag">JavaScript</span>
-                </div>
-            </div>
-            <div>
-                <h3>Tools/Technologies</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">GitHub</span>
-                    <span class="skill-tag">VS Code</span>
-                    <span class="skill-tag">REST APIs</span>
-                </div>
-            </div>
-            </div>
+  <main id="top">
 
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="eyebrow">Welcome to my little corner of the internet ✨</p>
+        <h1>Hi, I'm <span class="hl">Naomi</span>!</h1>
+        <p class="lead">
+          I'm a computer science student at UTSA exploring applied machine learning and NLP.
+          I like building things that are useful, careful, and a little bit cute.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-pink" href="#projects">See my projects</a>
+          <a class="btn btn-sky" href="#contact">Say hello</a>
+        </div>
+      </div>
 
+      <!-- Life-sim style profile card (original design) -->
+      <aside class="profile panel" aria-label="Profile card">
+        <div class="thought" role="img" aria-label="Thought bubble: currently building cool things">
+          <span>Building cool things ♥</span>
+        </div>
+        <div class="avatar" aria-hidden="true">N</div>
+        <h2 class="profile-name">Naomi Teklemichael</h2>
+        <dl class="facts">
+          <div><dt>Studying</dt><dd>B.S. Computer Science, UTSA</dd></div>
+          <div><dt>Graduating</dt><dd>December 2027</dd></div>
+          <div><dt>Focus</dt><dd>Applied ML &amp; NLP</dd></div>
+          <div><dt>Aspiration</dt><dd>Summer 2027 ML / SWE internship</dd></div>
+        </dl>
+        <!-- EDIT: change these traits to whatever feels most like you -->
+        <ul class="chips">
+          <li>Detail-oriented</li>
+          <li>Hands-on learner</li>
+          <li>ML enthusiast</li>
+        </ul>
+      </aside>
+    </section>
 
-            <section id = "projects">
-                <h2>
-                    Projects
-                </h2>
+    <!-- ABOUT -->
+    <section id="about" class="section wrap">
+      <div class="section-head reveal">
+        <span class="tag tag-pink">About me</span>
+        <h2>My life story so far</h2>
+      </div>
+      <div class="panel about reveal">
+        <p>
+          I'm a computer science major at UTSA with a focus on applied machine learning and natural language
+          processing. I learn best by building: I'd rather write the dictionary lookups and loops myself than
+          copy a finished solution, and I care a lot about getting the details right.
+        </p>
+        <p>
+          Outside of class I do undergraduate research through CS CURE, studying skin-tone bias in deep learning
+          melanoma classifiers, and I'm a member of ACM at UTSA. I'm currently looking for Summer 2027 machine
+          learning and software engineering internships.
+        </p>
+      </div>
+    </section>
 
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Live Sports Tracker</h3>
-                        <p class="tech">Tech Used: Python, requests, JSON, REST APIs, Git/GitHub</p>
-                        <ul class="description">
-                            <li>Built a Python application that polls a live REST API on a scheduled interval to track real-time score updates for
-                                sports matches</li>
-                            <li>Implemented change-detection logic using dictionary-based state comparison for efficient (O(1)) lookups between
-                                API polls</li>
-                            <li>Secured API credentials using environment variables 
-                                instead of hardcoding secrets into source code</li>
-                            
-                        </ul>
-                    </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="section wrap">
+      <div class="section-head reveal">
+        <span class="tag tag-sky">Projects</span>
+        <h2>Things I've built</h2>
+      </div>
 
-                    <div class="project-card">
-                        <h3>Personal Website</h3>
-                        <p class="tech">Tech Used: HTML, CSS, Javascript, Git/GitHub</p>
-                        <ul class="description">
-                            <li>Built a responsive, mobile-friendly personal site featuring an about section, skills, education timeline, and project
-                                showcase with live demo links</li>
-                            <li>Implemented dark mode toggle using vanilla JS</li>
-                            <li>Deployed and version-controlled using Git and GitHub Pages, with continuous updates as new projects are
-                                completed</li>
-                        
-                        </ul>
-                    </div>
+      <div class="grid">
+        <article class="card reveal" style="--accent: var(--sky)">
+          <div class="card-icon" aria-hidden="true">🔍</div>
+          <h3>Contradex</h3>
+          <p>A privacy-first tool that detects contradictions across personal documents like medical, insurance, lease, and loan PDFs.</p>
+          <ul class="chips"><li>Python</li><li>PyTorch</li><li>Hugging Face</li></ul>
+          <a class="card-link" href="https://github.com/naoml05/Contradex" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
 
-                    <div class="project-card">
-                        <h3>Habit Tracker Web App (in progress)</h3>
-                        <p class="tech">Tech Used: JavaScript, React, Node.js, Express, SQLite</p>
-                        <ul class="description">
-                            <li>Developed a full-stack habit tracking application allowing users to create habits, log daily completions, and view
-                                streak statistics</li>
-                            <li>Built a REST API with Express to handle CRUD 
-                                operations for habits and daily logs, backed by a SQLite database</li>
-                            <li>Implemented a calendar-heatmap visualization to display habit consistency over time</li>
-                        </ul>
+        <article class="card reveal" style="--accent: var(--mint)">
+          <div class="card-icon" aria-hidden="true">⚽</div>
+          <h3>Sports Tracker</h3>
+          <p>A live football tracker that pulls real match data from the football-data.org API and turns it into something easy to follow.</p>
+          <ul class="chips"><li>Python</li><li>REST API</li></ul>
+          <a class="card-link" href="https://github.com/naoml05/Sports-Tracker" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
 
-                    </div>
+        <!-- EDIT: update the link and status once your repo is public -->
+        <article class="card reveal" style="--accent: var(--peach)">
+          <div class="card-icon" aria-hidden="true">🌱</div>
+          <h3>Habit Tracker</h3>
+          <p>A full-stack web app for building daily habits, with a React front end and a Node/Express and SQLite back end.</p>
+          <ul class="chips"><li>React</li><li>Node / Express</li><li>SQLite</li></ul>
+          <a class="card-link" href="https://github.com/naoml05" target="_blank" rel="noopener">See my GitHub →</a>
+        </article>
 
-                    <div class="project-card">
-                        <h3>Contradex — Contradiction Detection for Personal Records (in progress)</h3>
-                        <p class="tech">Tech Used: Python, PyTorch, Hugging Face </p>
-                        <ul class="description">
-                            <li>Building a privacy-first pipeline that ingests a user’s medical, insurance, lease, and loan PDFs and flags contradictions across 
-                                sources and time (e.g., an EOB billing a stay as outpatient vs. a discharge summary saying inpatient)</li>
-                            <li>Designing LLM-based structured extraction that normalizes 
-                                free text into (entity, attribute, value, date, source) claim tuples forcross-document comparison</li>
-                            <li>Architecting two-stage retrieval + verification: embedding clustering surfaces candidate claim pairs on a shared entity, then a
-                                DeBERTa-v3 NLI cross-encoder with LLM-as-judge fallback 
-                                separates contradictions from legitimate change over time</li>
-                        </ul>
+        <article class="card reveal" style="--accent: var(--lav)">
+          <div class="card-icon" aria-hidden="true">🔬</div>
+          <h3>CS CURE Research</h3>
+          <p>Undergraduate research at UTSA on skin-tone bias in deep learning melanoma classifiers, asking who these models work well for and who they miss.</p>
+          <ul class="chips"><li>Deep Learning</li><li>Bias &amp; Fairness</li><li>Research</li></ul>
+        </article>
 
-                    </div>
-                </div>
-            </section>
+        <article class="card card-soon reveal" style="--accent: var(--sun)">
+          <div class="card-icon" aria-hidden="true">🏗️</div>
+          <h3>Under construction</h3>
+          <p>The next build is loading. Check back soon!</p>
+        </article>
+      </div>
+    </section>
 
-            <section id = "contact">
-                <h2>
-                    Contact
-                </h2>
-                <p>Email me: <a href="mailto:naomiteklemichael444@gmail.com">naomiteklemichael444@gmail.com</a></p>
-            </section>
+    <!-- SKILLS -->
+    <!-- EDIT: each --lvl is out of 10. Set them to what feels honest to you. -->
+    <section id="skills" class="section wrap">
+      <div class="section-head reveal">
+        <span class="tag tag-mint">Skills</span>
+        <h2>Skill levels</h2>
+      </div>
 
-        </main>
-    </body>
+      <div class="skills-grid">
+        <div class="panel skill-panel reveal">
+          <h3>Languages</h3>
+          <div class="skill"><span>Python</span><div class="meter" style="--lvl:8"><i></i></div></div>
+          <div class="skill"><span>Java</span><div class="meter" style="--lvl:6"><i></i></div></div>
+          <div class="skill"><span>JavaScript</span><div class="meter" style="--lvl:6"><i></i></div></div>
+        </div>
+
+        <div class="panel skill-panel reveal">
+          <h3>Machine Learning</h3>
+          <div class="skill"><span>PyTorch</span><div class="meter" style="--lvl:6"><i></i></div></div>
+          <div class="skill"><span>Hugging Face</span><div class="meter" style="--lvl:5"><i></i></div></div>
+          <div class="skill"><span>NLP</span><div class="meter" style="--lvl:5"><i></i></div></div>
+        </div>
+
+        <div class="panel skill-panel reveal">
+          <h3>Web</h3>
+          <div class="skill"><span>React</span><div class="meter" style="--lvl:5"><i></i></div></div>
+          <div class="skill"><span>Node / Express</span><div class="meter" style="--lvl:5"><i></i></div></div>
+          <div class="skill"><span>SQLite</span><div class="meter" style="--lvl:4"><i></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey" class="section wrap">
+      <div class="section-head reveal">
+        <span class="tag tag-lav">Journey</span>
+        <h2>Milestones</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="reveal">
+          <h3>B.S. Computer Science, UTSA</h3>
+          <p>Expected December 2027, with a focus on applied machine learning and NLP.</p>
+        </li>
+        <li class="reveal">
+          <h3>CS CURE undergraduate researcher</h3>
+          <p>Investigating skin-tone bias in deep learning melanoma classifiers.</p>
+        </li>
+        <li class="reveal">
+          <h3>ACM at UTSA</h3>
+          <p>Member of the university's computing community.</p>
+        </li>
+        <li class="reveal">
+          <h3>Next up: Summer 2027</h3>
+          <p>Looking for a machine learning or software engineering internship.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section wrap">
+      <div class="panel contact reveal">
+        <span class="tag tag-pink">Contact</span>
+        <h2>Let's be friends! 💌</h2>
+        <p>Recruiter, researcher, or fellow student: I'd love to hear from you.</p>
+        <div class="btn-row center">
+          <!-- EDIT: put your real email address here -->
+          <a class="btn btn-pink" href="mailto:your.email@example.com">Send an email</a>
+          <a class="btn btn-sky" href="https://github.com/naoml05" target="_blank" rel="noopener">GitHub</a>
+          <!-- EDIT: add your LinkedIn if you'd like
+          <a class="btn btn-lav" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+          -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year">2026</span> Naomi Teklemichael · Made with ♥</p>
+  </footer>
+
+</body>
 </html>
